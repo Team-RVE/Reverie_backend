@@ -1,15 +1,12 @@
 package com.example.rve.global.security.exception;
 
 import com.example.rve.global.error.ErrorCode;
-import lombok.Getter;
+import com.example.rve.global.error.RveException;
 
-@Getter
-public class JwtExpiredException extends RuntimeException {
 
-  private final ErrorCode errorCode;
-
+public class JwtExpiredException extends RveException {
   public JwtExpiredException() {
-    super(ErrorCode.JWT_EXPIRED.getMessage());
-    this.errorCode = ErrorCode.JWT_EXPIRED;
+    super(ErrorCode.JWT_EXPIRED);
+
   }
 }

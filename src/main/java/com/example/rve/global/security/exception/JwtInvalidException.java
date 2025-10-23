@@ -1,15 +1,11 @@
 package com.example.rve.global.security.exception;
 
 import com.example.rve.global.error.ErrorCode;
-import lombok.Getter;
+import com.example.rve.global.error.RveException;
 
-@Getter
-public class JwtInvalidException extends RuntimeException {
-
-  private final ErrorCode errorCode;
+public class JwtInvalidException extends RveException {
 
   public JwtInvalidException() {
-    super(ErrorCode.JWT_INVALID.getMessage());
-    this.errorCode = ErrorCode.JWT_INVALID;
+    super(ErrorCode.JWT_INVALID);
   }
 }
