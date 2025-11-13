@@ -1,4 +1,4 @@
-package com.example.rve.global.security.config;
+package com.example.rve.global.handler.config;
 
 import com.example.rve.global.security.jwt.JwtTokenFilter;
 import lombok.RequiredArgsConstructor;
